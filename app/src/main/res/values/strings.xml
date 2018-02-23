@@ -1,0 +1,108 @@
+<resources>
+    <!-- Main screen texts -->
+    <string name="app_name">Toledo Quiz</string>
+    <string name="quiz_welcome">How well do you know Toledo?</string>
+    <string name="begin_quiz">Begin Quiz</string>
+
+    <!-- Activity Titles -->
+    <string name="title_activity_q1">Question One</string>
+    <string name="title_activity_q2">Question Two</string>
+    <string name="title_activity_q3">Question Three</string>
+    <string name="title_activity_q4">Question Four</string>
+    <string name="title_activity_q5">Question Five</string>
+    <string name="title_activity_q6">Question Six</string>
+    <string name="title_activity_q7">Question Seven</string>
+    <string name="title_activity_q8">Question Eight</string>
+    <string name="title_activity_q9">Question Nine</string>
+    <string name="title_activity_q10">Question Ten</string>
+    <string name="title_activity_results">The Verdict Is In!</string>
+
+    <!-- Toasts -->
+    <string name="toast_correct">CORRECT!</string>
+    <string name="toast_incorrect_1">Sorry, the correct answer is\nROCKETS</string>
+    <string name="toast_incorrect_2">Sorry, the correct answer is\nOHIO</string>
+    <string name="toast_incorrect_3">Sorry, the correct answers are\nKATIE HOLMES and CRYSTAL BOWERSOX</string>
+    <string name="toast_incorrect_4">Sorry, the correct answer is\nTRUE</string>
+    <string name="toast_incorrect_5">Sorry, the correct answer is\n651,429</string>
+    <string name="toast_incorrect_6">Sorry, the correct answer is\n0</string>
+    <string name="toast_incorrect_7">Sorry, the correct answer is\nLAKE ERIE</string>
+    <string name="toast_incorrect_8">Sorry, the correct answers are\nMUDHENS and WALLEYE</string>
+    <string name="toast_incorrect_9">Sorry, the correct answer is\nGLASS CITY</string>
+    <string name="toast_incorrect_10">Sorry, the correct answer is\nJEEP WRANGLERS</string>
+
+    <!-- Miscellaneous -->
+    <string name="correct">True</string>
+    <string name="incorrect">False</string>
+    <string name="next_question">Next Question</string>
+    <string name="type_answer">Type Answer Here</string>
+    <string name="numeral">Enter #</string>
+    <string name="finish">Finish</string>
+    <string name="try_again">Try Again</string>
+    <string name="send_to">Send to:</string>
+    <string name="share">Share</string>
+    <string name="location">Location</string>
+    <string name="logo">Toledo Rockets Logo</string>
+
+    <!-- Questions -->
+    <string name="q1_text">What is the team name for University of Toledo sports?</string>
+    <string name="q2_text">In which state is Toledo located?</string>
+    <string name="q3_text">Select all the famous Toledoans</string>
+    <string name="q4_text">Toledo was once located inside Michigan</string>
+    <string name="q5_text">What is the population of greater Toledo?</string>
+    <string name="q6_text">How many Presidents of The United States are from Toledo?</string>
+    <string name="q7_text">Toledo is situated on which Great Lake?</string>
+    <string name="q8_text">What are Toledo\'s two professional sports teams?</string>
+    <string name="q9_text">Toledo is also known as</string>
+    <string name="q10_text">Toledo supplies the world with</string>
+
+    <!-- Card Labels -->
+    <string name="q1_label">Q1</string>
+    <string name="q2_label">Q2</string>
+    <string name="q3_label">Q3</string>
+    <string name="q4_label">Q4</string>
+    <string name="q5_label">Q5</string>
+    <string name="q6_label">Q6</string>
+    <string name="q7_label">Q7</string>
+    <string name="q8_label">Q8</string>
+    <string name="q9_label">Q9</string>
+    <string name="q10_label">Q10</string>
+
+    <!-- Answer Choices -->
+    <string name="q1_choice1">Comets</string>
+    <string name="q1_choice2">Rockets</string>
+    <string name="q1_choice3">Bombers</string>
+    <string name="q3_choice1">Katie Holmes</string>
+    <string name="q3_choice2">Katie Couric</string>
+    <string name="q3_choice3">LeBron James</string>
+    <string name="q3_choice4">Crystal Bowersox</string>
+    <string name="q5_choice1">651,429</string>
+    <string name="q5_choice2">298,750</string>
+    <string name="q5_choice3">463,208</string>
+    <string name="q7_choice1">Huron</string>
+    <string name="q7_choice2">Ontario</string>
+    <string name="q7_choice3">Michigan</string>
+    <string name="q7_choice4">Erie</string>
+    <string name="q7_choice5">Superior</string>
+    <string name="q8_choice1">Mudhens</string>
+    <string name="q8_choice2">Mudbugs</string>
+    <string name="q8_choice3">Bullfrogs</string>
+    <string name="q8_choice4">Walleye</string>
+    <string name="q9_choice1">T City</string>
+    <string name="q9_choice2">Shoretown</string>
+    <string name="q9_choice3">Glass City</string>
+    <string name="q10_choice1">Asus Laptops</string>
+    <string name="q10_choice2">Jeep Wranglers</string>
+    <string name="q10_choice3">Milton Bradley Board Games</string>
+
+    <!-- Results Tag Lines -->
+    <string name="res1">Don\'t worry. You tried.</string>
+    <string name="res2">Not the most exciting</string>
+    <string name="res3">Just so-so</string>
+    <string name="res4">Um, okay :|</string>
+    <string name="res5">How Average Of You</string>
+    <string name="res6">It\'s Getting There</string>
+    <string name="res7">Good job!</string>
+    <string name="res8">Great job!</string>
+    <string name="res9">That\'s Pretty awesome!</string>
+    <string name="res10">Holy Toledo!</string>
+</resources>
