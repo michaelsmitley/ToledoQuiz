@@ -50,7 +50,12 @@ public class Q6Activity extends AppCompatActivity {
                 //Checks to see if the answer is "0"
                 //Increments value of correct answers if necessary
                 //Displays a custom toast for a correct answer
-                if (PresAnswer.getText().toString().equalsIgnoreCase("0")) {
+                if (PresAnswer.getText().toString().equalsIgnoreCase("")) {
+                    toastText.setText(R.string.toast_no_answer);
+                    toastImage.setImageResource(R.drawable.raisedhand);
+                    toast.show();
+                    return;
+                }else if (PresAnswer.getText().toString().equalsIgnoreCase("0")) {
                     correctAnswers++;
                     toastText.setText(R.string.toast_correct);
                     toastImage.setImageResource(R.drawable.happyface);

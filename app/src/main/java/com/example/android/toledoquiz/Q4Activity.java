@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -44,11 +45,19 @@ public class Q4Activity extends AppCompatActivity {
                 Bundle bundle = getIntent().getExtras();
                 correctAnswers = bundle.getInt("correctAnswers");
 
+                //Identifies the radio button group for validation purposes
+                RadioGroup q4Choices = findViewById(R.id.q4choices);
+
                 //Identifies the correct answer's radio button
                 RadioButton correctAnswer = findViewById(R.id.q4_choice1_radio_button);
 
                 //increments the correct answer if necessary and displays custom toast
-                if (correctAnswer.isChecked()) {
+                if (q4Choices.getCheckedRadioButtonId() == -1) {
+                    toastText.setText(R.string.toast_no_answer);
+                    toastImage.setImageResource(R.drawable.raisedhand);
+                    toast.show();
+                    return;
+                } else if (correctAnswer.isChecked()) {
                     correctAnswers++;
                     toastText.setText(R.string.toast_correct);
                     toastImage.setImageResource(R.drawable.happyface);

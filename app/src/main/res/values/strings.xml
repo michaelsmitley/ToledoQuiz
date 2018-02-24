@@ -29,6 +29,7 @@
     <string name="toast_incorrect_8">Sorry, the correct answers are\nMUDHENS and WALLEYE</string>
     <string name="toast_incorrect_9">Sorry, the correct answer is\nGLASS CITY</string>
     <string name="toast_incorrect_10">Sorry, the correct answer is\nJEEP WRANGLERS</string>
+    <string name="toast_no_answer">Not so fast! Please answer the question</string>
 
     <!-- Miscellaneous -->
     <string name="correct">True</string>

@@ -56,7 +56,7 @@
             </LinearLayout>
 
             <RadioGroup
-                android:id="@+id/q1_choices"
+                android:id="@+id/q7_choices"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">

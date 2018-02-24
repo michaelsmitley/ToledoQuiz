@@ -50,7 +50,13 @@ public class Q2Activity extends AppCompatActivity {
                 //Checks to see if the answer is "Ohio"
                 //Increments value of correct answers if necessary
                 //Displays a custom toast for a correct answer
-                if (stateAnswer.getText().toString().equalsIgnoreCase("ohio")) {
+
+                if (stateAnswer.getText().toString().equalsIgnoreCase("")) {
+                    toastText.setText(R.string.toast_no_answer);
+                    toastImage.setImageResource(R.drawable.raisedhand);
+                    toast.show();
+                    return;
+                }else if (stateAnswer.getText().toString().equalsIgnoreCase("ohio")) {
                     correctAnswers++;
                     toastText.setText(R.string.toast_correct);
                     toastImage.setImageResource(R.drawable.happyface);

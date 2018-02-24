@@ -56,6 +56,28 @@ public class Q8Activity extends AppCompatActivity {
                 CheckBox answer3 = findViewById(R.id.q8_choice3_checkbox);
                 CheckBox answer4 = findViewById(R.id.q8_choice4_checkbox);
 
+                //Checks to see if user has not answered question; shows toast to answer question
+                // if true
+                boolean atLeastOneChecked = false;
+                if (answer1.isChecked()) {
+                    atLeastOneChecked = true;
+                }
+                if (answer2.isChecked()){
+                    atLeastOneChecked = true;
+                }
+                if (answer3.isChecked()){
+                    atLeastOneChecked = true;
+                }
+                if (answer4.isChecked()){
+                    atLeastOneChecked = true;
+                }
+                if (!atLeastOneChecked){
+                    toastText.setText(R.string.toast_no_answer);
+                    toastImage.setImageResource(R.drawable.raisedhand);
+                    toast.show();
+                    return;
+                }
+
                 //Identifies an incorrect answer displays a custom toast
                 if (answer2.isChecked()) {
                     toastText.setText(R.string.toast_incorrect_8);
