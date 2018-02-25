@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#eeeeee"
-    android:padding="12dp"
+    android:background="@color/almost_white"
+    android:padding="@dimen/view_padding"
     tools:context="com.example.android.toledoquiz.Q2Activity">
 
     <!-- CardView for question one -->
@@ -12,27 +12,26 @@
         android:id="@+id/question_one"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        card_view:cardCornerRadius="2dp"
-        card_view:cardElevation="2dp">
+        card_view:cardCornerRadius="@dimen/cardview_default_radius"
+        card_view:cardElevation="@dimen/cardview_default_elevation">
 
         <!-- Yellow line at top of card -->
         <View
             android:layout_width="match_parent"
-            android:layout_height="4dp"
-            android:background="#ffda00" />
+            android:layout_height="@dimen/card_accent_line"
+            android:background="@color/card_accent" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="@dimen/default_padding">
 
             <LinearLayout
                 android:id="@+id/q1_header"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="@dimen/default_padding"
                 android:orientation="horizontal">
 
                 <TextView
@@ -40,11 +39,11 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:paddingEnd="16dp"
-                    android:paddingRight="16dp"
+                    android:paddingEnd="@dimen/default_padding"
+                    android:paddingRight="@dimen/default_padding"
                     android:text="@string/q2_text"
-                    android:textColor="#333333"
-                    android:textSize="24sp" />
+                    android:textColor="@color/darkergray"
+                    android:textSize="@dimen/question_text" />
 
                 <TextView
                     android:id="@+id/q1_label"
@@ -52,8 +51,8 @@
                     android:layout_height="match_parent"
                     android:fontFamily="sans-serif-light"
                     android:text="@string/q2_label"
-                    android:textColor="#15397f"
-                    android:textSize="48sp" />
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/q_label" />
 
             </LinearLayout>
 
@@ -68,21 +67,21 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="36dp"
+                android:layout_marginTop="@dimen/action_button_top_margin"
                 android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/q2_answer_button"
-                    android:layout_width="250dp"
+                    android:layout_width="@dimen/button_width"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:background="@drawable/secondary_button_selector"
                     android:drawableEnd="@drawable/ic_navigate_next_white_18dp"
                     android:drawableRight="@drawable/ic_navigate_next_white_18dp"
-                    android:padding="8dp"
+                    android:padding="@dimen/button_padding"
                     android:text="@string/next_question"
-                    android:textColor="#ffffff"
-                    android:textSize="24sp" />
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/button_text_size" />
 
             </RelativeLayout>
 

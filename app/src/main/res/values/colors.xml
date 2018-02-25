@@ -3,4 +3,11 @@
     <color name="colorPrimary">#15397F</color>
     <color name="colorPrimaryDark">#15397F</color>
     <color name="colorAccent">#15397f</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="card_accent">#ffda00</color>
+    <color name="almost_white">#eeeeee</color>
+    <color name="darkergray">#333333</color>
+    <color name="mediumgray">#666666</color>
+    <color name="button_text_color">#ffffff</color>
 </resources>

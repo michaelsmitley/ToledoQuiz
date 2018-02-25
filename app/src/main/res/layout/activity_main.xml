@@ -28,24 +28,24 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:fontFamily="sans_serif-light"
-        android:shadowColor="#000000"
+        android:shadowColor="@color/black"
         android:shadowDx="2"
         android:shadowDy="2"
         android:shadowRadius="5"
         android:text="@string/quiz_welcome"
-        android:textColor="#ffffff"
+        android:textColor="@color/white"
         android:textSize="20sp" />
 
     <Button
         android:id="@+id/start_quiz_button"
-        android:layout_width="250dp"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="24dp"
         android:background="@drawable/button_selector"
         android:text="@string/begin_quiz"
-        android:textColor="#15397f"
-        android:textSize="24sp" />
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/button_text_size" />
 
 </RelativeLayout>
