@@ -10,4 +10,5 @@
     <color name="darkergray">#333333</color>
     <color name="mediumgray">#666666</color>
     <color name="button_text_color">#ffffff</color>
+    <color name="q_label_text_color">#15397f</color>
 </resources>
