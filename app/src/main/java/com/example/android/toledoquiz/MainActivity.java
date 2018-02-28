@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Locate button
-        Button startQuiz = (Button) findViewById(R.id.start_quiz_button);
+        Button startQuiz = findViewById(R.id.start_quiz_button);
 
         //Assign listener to button
         startQuiz.setOnClickListener(new View.OnClickListener() {

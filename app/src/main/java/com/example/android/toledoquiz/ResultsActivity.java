@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class ResultsActivity extends AppCompatActivity {
 
-    int correctAnswers;
+    private int correctAnswers;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -27,9 +27,9 @@ public class ResultsActivity extends AppCompatActivity {
         Bundle bundle = getIntent().getExtras();
         correctAnswers = bundle.getInt("correctAnswers");
         String score = String.valueOf(correctAnswers * 10) + "%";
-        TextView percentageCorrect = (TextView) findViewById(R.id.results_score);
+        TextView percentageCorrect = findViewById(R.id.results_score);
         percentageCorrect.setText(score);
-        TextView resultsTagLine = (TextView) findViewById(R.id.results_text);
+        TextView resultsTagLine = findViewById(R.id.results_text);
         switch (correctAnswers){
             case 1: resultsTagLine.setText(R.string.res1); break;
             case 2: resultsTagLine.setText(R.string.res2); break;
@@ -44,7 +44,7 @@ public class ResultsActivity extends AppCompatActivity {
         }
 
         //Locate button
-        Button answer = (Button) findViewById(R.id.restart_quiz_button);
+        Button answer = findViewById(R.id.restart_quiz_button);
 
         //Assign listener to button
         answer.setOnClickListener(new View.OnClickListener() {

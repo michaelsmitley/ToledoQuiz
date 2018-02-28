@@ -39,10 +39,10 @@
     <string name="numeral">Enter #</string>
     <string name="finish">Finish</string>
     <string name="try_again">Try Again</string>
-    <string name="send_to">Send to:</string>
     <string name="share">Share</string>
     <string name="location">Location</string>
     <string name="logo">Toledo Rockets Logo</string>
+    <string name="emoji">emoji icon</string>
 
     <!-- Questions -->
     <string name="q1_text">What is the team name for University of Toledo sports?</string>

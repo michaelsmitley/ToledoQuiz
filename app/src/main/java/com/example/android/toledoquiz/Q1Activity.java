@@ -17,7 +17,7 @@ import android.widget.Toast;
 public class Q1Activity extends MainActivity {
 
     //Establishes the initial variable to store a running total of correct answers
-    int correctAnswers = 0;
+    private int correctAnswers = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

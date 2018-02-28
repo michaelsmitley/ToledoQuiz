@@ -17,7 +17,7 @@ import android.widget.Toast;
 
 public class Q9Activity extends AppCompatActivity {
 
-    int correctAnswers;
+    private int correctAnswers;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
