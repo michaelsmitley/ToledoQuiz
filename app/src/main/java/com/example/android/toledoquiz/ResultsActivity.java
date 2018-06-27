@@ -4,11 +4,16 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ResultsActivity extends AppCompatActivity {
 
@@ -26,6 +31,19 @@ public class ResultsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_results);
         Bundle bundle = getIntent().getExtras();
         correctAnswers = bundle.getInt("correctAnswers");
+
+        //Establishes a custom full screen toast
+        LayoutInflater inflater = getLayoutInflater();
+        final View toastLayout = inflater.inflate(R.layout.custom_toast, (ViewGroup) findViewById(R.id.custom_toast_container));
+        final TextView toastText = toastLayout.findViewById(R.id.text);
+        final ImageView toastImage = toastLayout.findViewById(R.id.image);
+        final Toast toast = Toast.makeText(getApplicationContext(), toastText.getText(), Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.FILL_VERTICAL | Gravity.FILL_HORIZONTAL, 0, 0);
+        toast.setView(toastLayout);
+        toastText.setText("You got " + correctAnswers + " out of 10 answers correct");
+        toastImage.setImageResource(R.drawable.happyface);
+        toast.show();
+
         String score = String.valueOf(correctAnswers * 10) + "%";
         TextView percentageCorrect = findViewById(R.id.results_score);
         percentageCorrect.setText(score);

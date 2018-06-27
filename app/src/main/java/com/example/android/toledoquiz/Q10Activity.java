@@ -69,6 +69,8 @@ public class Q10Activity extends AppCompatActivity {
                     toast.show();
                 }
 
+
+
                 //delays the next activity intent until after the toast has finished displaying
                 new Handler().postDelayed(new Runnable() {
                     @Override
