@@ -78,47 +78,17 @@ public class Q3Activity extends AppCompatActivity {
                     return;
                 }
 
-                    //Identifies an incorrect answer and displays a custom toast
-                if (answer2.isChecked()) {
-                    toastText.setText(R.string.toast_incorrect_3);
-                    toastImage.setImageResource(R.drawable.sadface);
-                    toast.show();
-                }
-
-                //Identifies an incorrect answer and displays a custom toast
-                if (answer3.isChecked()) {
-                    toastText.setText(R.string.toast_incorrect_3);
-                    toastImage.setImageResource(R.drawable.sadface);
-                    toast.show();
-                }
-
-                //Assigns value if one correct answer has been selected
-                if (answer1.isChecked()) {
-                    part1 = 1;
-                }
-
-                //Assigns value if the second correct answer has been selected
-                if (answer4.isChecked()) {
-                    part2 = 1;
-                }
-
-                /*checks to see if both of the correct answers are selected
-                and displays the "correct" or "incorrect" toast appropriately
-                 */
-                if ((part1 + part2) == 2) {
+                //checks for correct and incorrect answers
+                if (answer1.isChecked() && !answer2.isChecked() && !answer3.isChecked() && answer4.isChecked()){
                     correctAnswers++;
                     toastText.setText(R.string.toast_correct);
                     toastImage.setImageResource(R.drawable.happyface);
                     toast.show();
-
-                    //Displays a custom toast for an incorrect answer
                 } else {
                     toastText.setText(R.string.toast_incorrect_3);
                     toastImage.setImageResource(R.drawable.sadface);
                     toast.show();
                 }
-
-
 
                 //delays the next activity intent until after the toast has finished displaying
                 new Handler().postDelayed(new Runnable() {
